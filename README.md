@@ -54,7 +54,8 @@ Sources:
 yay -S moreutils rustdesk-bin anydesk-bin onlyoffice-bin florence
 ```
 * moreutils - package to allow the update.sh script in this folder to do the orphan package cleanup with no errors.
-* rustdesk-bin - Remote access/support software, opensource and allows self-hosted server
+* rustdesk-bin - Remote access/support software, opensource and allows self-hosted server. Experimental support for Wayland, and can be self-hosted, but glitches when Luppp is opened so I'm not using it for now.
+* anydesk-bin - Remote access/support software, works the best for now (Luppp doesn't break it), but requires an X11 session (does not support Wayland at all). This should be used until Rustdesk works properly.
 * onlyoffice-bin - MS Office replacement, more compatible and familiar than Libreoffice
 * florence - Virtual on-screen keyboard for tablet usage without the keyboard attached
 ## Remote Support
@@ -108,5 +109,5 @@ Sources
 * https://www.reddit.com/r/kde/comments/1bahvog/fix_sddm_on_hidpi_screens_on_plasma_6/
 
 # Switching from Grub to Systemd-boot
-This is only needed for existing setups where GRUB was chosed over Systemd-boot, and now it is desired to change to Systemd-boot.
+This is only needed for existing setups where GRUB was chosed over Systemd-boot, and now it is desired to change to Systemd-boot. It is NOT needed in normal setups where Systemd (the default) is chosen in the first place (like when I set up the Surface Pro 3's)
 * See https://forum.endeavouros.com/t/tutorial-convert-to-systemd-boot/13290
